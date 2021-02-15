@@ -18,13 +18,11 @@ setGradient();
 
 //returns numbers upto 255 randomly
 function getRndInteger() {
-  console.log(Math.floor(Math.random() * 255)); // testing**************************************************************************
-  return Math.floor(Math.random() * 255);
+  	return Math.floor(Math.random() * 255);
 };
 
 function randomColorNo() {
 	var randomColor = "rgb(" + getRndInteger() + ", " + getRndInteger() + ", " + getRndInteger() + ")";
-	console.log(randomColor); // testing************************************************************************************
 	return randomColor;
 }
 
@@ -34,7 +32,7 @@ function setGradientRandom() {
 	randomColor1 =  randomColorNo();
 	randomColor2 =  randomColorNo();
 	body.style.background = "linear-gradient(to right, " + randomColor1 + "," + randomColor2 + ")";
-    css.textContent = body.style.background + ";";
+  	css.textContent = body.style.background + ";";
 } 
 
 color1.addEventListener("input", setGradient);
